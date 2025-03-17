@@ -1,0 +1,15 @@
+<h1>Posts</h1>
+
+<% if @posts.any? %>
+  <% @posts.each do |post| %>
+    <div class="post">
+      <h2><%= link_to post[:title], post_path(post[:id]) %></h2>
+      <p>By: <%= post[:author] %></p>
+      <p><%= post[:content] %></p>
+    </div>
+  <% end %>
+<% else %>
+  <p>No posts available.</p>
+<% end %>
+
+

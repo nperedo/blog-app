@@ -1,0 +1,12 @@
+<h1>Names</h1>
+
+<% if @names.any? %>
+  <% @names.each do |name| %>
+    <div class="name">
+      <h2><%= link_to name[:name], name_path(name[:id]) %></h2>
+      <p>Age: <%= name[:age] %></p>
+    </div>
+  <% end %>
+<% else %>
+  <p>No names available.</p>
+<% end %>
