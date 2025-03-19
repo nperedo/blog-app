@@ -9,20 +9,5 @@
  * Consider organizing styles into separate files for maintainability.
  */
 
-/* Flash message styles */
-.flash {
-  padding: 10px 15px;
-  margin: 10px 0;
-  border-radius: 4px;
-  font-weight: bold;
-}
 
-.flash.notice {
-  background-color: #4CAF50; /* Green */
-  color: white;
-}
-
-.flash.alert {
-  background-color: #f44336; /* Red */
-  color: white;
-}
+@import "bootstrap";
