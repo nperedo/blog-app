@@ -1,0 +1,11 @@
+<nav>
+  <% if logged_in? %>
+    <p>
+      Logged in as <%= current_user.name %>
+      <%= link_to 'Logout', logout_path, method: :delete %>
+    </p>
+  <% else %>
+    <%= link_to 'Login', login_path %>
+    <%= link_to 'Signup', signup_path %>
+  <% end %>
+</nav>

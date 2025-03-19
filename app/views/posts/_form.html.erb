@@ -1,0 +1,16 @@
+<%= form_with model: @post do |form| %>
+  <p>
+    <%= form.label :title %><br>
+    <%= form.text_field :title %><br>
+  </p> 
+  <p>
+    <%= form.label :content %><br>
+    <%= form.text_area :content %><br>
+  </p> 
+  <p>
+    <%= form.label :author %><br>
+    <%= form.text_field :author %><br>
+  </p> 
+   
+  <%= form.submit %>
+<% end %>

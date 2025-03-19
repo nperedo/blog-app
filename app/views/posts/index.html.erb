@@ -1,5 +1,5 @@
 <h1>Posts</h1>
-
+<%= link_to 'Create Post', new_post_path %>
 <% if @posts.any? %>
   <% @posts.each do |post| %>
     <div class="post">
@@ -11,5 +11,7 @@
 <% else %>
   <p>No posts available.</p>
 <% end %>
+
+
 
 

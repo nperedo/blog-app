@@ -6,3 +6,15 @@
 <p><%= @post[:content] %></p>
 
 <%= link_to 'Back to Posts Index', posts_path %>
+<br>
+<br>
+<%= link_to 'Edit Post', edit_post_path %>
+<br>
+<br>
+<%= link_to 'Delete Post', post_path(@post), data: {
+  turbo_method: :delete,
+  turbo_confirm: "Are you sure?"
+} %>
+
+<%# button_to 'Delete', @post, method: :delete, data: { turbo_confirm: 'Are you sure?' } %>
+

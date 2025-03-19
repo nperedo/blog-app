@@ -23,6 +23,12 @@
   </head>
 
   <body>
+    <%= render 'layouts/navigation' %>
+    <% flash.each do |key, message| %>
+      <div class="flash <%= key %>">
+        <%= message %>
+      </div>
+    <% end %>
     <%= yield %>
   </body>
 </html>
